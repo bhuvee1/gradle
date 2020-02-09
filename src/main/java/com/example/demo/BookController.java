@@ -50,6 +50,7 @@ public class BookController {
                     .orElseThrow(() -> new BookNotFoundException(Id));
 
             bookRepository.delete(b2);
+            System.out.println("i love java jenkin");
 
             return ResponseEntity.ok().build();
         }
